@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/signin-box.css" type="text/css" rel="stylesheet">
+    <link href="/styles/header.css" type="text/css" rel="stylesheet">
+    <title>Sign-in</title>
+</head>
+<body>
+    <!--header section-->
+    <header class="header__wrapper">
+        <div class="header__left-wrapper">
+            <div class="header__logo">DMUinfo</div>
+            <nav class="header__nav-bar">
+                <a class="header__btn" href="">지도 보기</a>
+                <a class="header__btn" href="">모아 보기</a>
+            </nav>
+        </div>
+        <div class="header__sign-section">
+            <a class="header__btn " href="">로그인</a>
+            <a class="header__btn header__signup" href="">회원 가입</a>
+        </div>
+    </header>
+    <!--signin section-->
+    <section class="content">
+        <div class="input__loginbox">
+            <form action="" class="input__form-box">
+                <h1>로그인</h1>
+                <div class="input__id">
+                    <label>
+                        아이디<br>
+                        <input class="input__textbox" type="text" placeholder="아이디 입력(6~20자)" minlength="6" maxlength="20">
+                    </label>
+                </div>
+                <div class="input__password">
+                    <label>
+                        비밀번호<br>
+                        <input class="input__textbox" type="password" placeholder="비밀번호 입력">
+                    </label>
+                    <div class="input__password-find"><a href="비밀번호 찾기" target="_self">비밀번호를 잊어버리셨나요?</a></div>
+                </div>
+                <div class="input__login-button">
+                    <input type="submit" value="로그인">
+                    <div class="input__join-membership">계정이 없으신가요? <a href="회원가입페이지" target="_self">회원가입</a> 하러가기</div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

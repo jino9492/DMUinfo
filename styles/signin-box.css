@@ -1,4 +1,7 @@
 /*Login-style.css*/
+html{
+        margin-top: 80px;
+}
 body{
         background-color: #F0F0F0;
 }
@@ -11,7 +14,7 @@ h1{
 .input__loginbox{
         width: 700px;
         height: 560px;
-        margin: 180px auto 0;
+        margin: 100px auto 0;
         padding: 20px 0;
         border-radius: 30px;
         background-color: white;

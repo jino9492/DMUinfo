@@ -1,0 +1,25 @@
+.map__data-wrapper{
+    position: absolute;
+    top: 0;
+}
+
+.map__data{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.map__marker{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+#map__data1{display:none;top:calc(489px - 120px);left:calc(674px - 100px);}
+#map__marker1{top:calc(489px - 10px);left:calc(674px - 10px);}
+#map__marker1:hover~#map__data1{display: inline-block;}
+#map__data1:hover{display: inline-block;}

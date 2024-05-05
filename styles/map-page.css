@@ -1,0 +1,19 @@
+.map__map-section{
+    position: relative;
+    margin: 20px;
+}
+
+.map__cur-coords{
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    top: 0;
+}
+
+.map__map-image{
+    -webkit-user-drag: none;
+}
+
+.map__cur-coords{
+    left: 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/map-page.css">
+    <link rel="stylesheet" href="../styles/map.css">
+    <link rel="stylesheet" href="../styles/header.css" >
+    <title>Document</title>
+</head>
+<body>
+    <!--header section-->
+    <header class="header__wrapper">
+        <div class="header__left-wrapper">
+            <div class="header__logo">DMUinfo</div>
+            <nav class="header__nav-bar">
+                <a class="header__btn" href="">지도 보기</a>
+                <a class="header__btn" href="">모아 보기</a>
+            </nav>
+        </div>
+        <div class="header__sign-section">
+            <a class="header__btn " href="">로그인</a>
+            <a class="header__btn header__signup" href="">회원 가입</a>
+        </div>
+    </header>
+    <!--map section-->
+    <main>
+        <section class="map__map-section">
+            <div class="map__cur-coords">(null,null)</div>
+            <!--map data anchor-->
+            <div class="map__data-wrapper">
+                <div class="map__marker" id="map__marker1"></div>
+                <div class="map__data" id="map__data1">asdf</div>
+            </div>
+            <!---->
+            <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
+        </section>
+        <section class="map__iframe-section">
+            <iframe name="map-target"></iframe>
+        </section>
+    </main>
+
+    <map name="dongyang-map">
+        <area shape="circle" coords="674,489,8" href="../pages/signin-page.html" target="map-target">
+    </map>
+</body>
+<script>
+    function getCoords(event) {
+        var xCoordinate = event.offsetX;
+        var yCoordinate = event.offsetY;
+        var text = "(" + xCoordinate + "," + yCoordinate + ")";
+        document.getElementsByClassName("map__cur-coords")[0].innerHTML=text;
+    }
+
+</script>
+</html>

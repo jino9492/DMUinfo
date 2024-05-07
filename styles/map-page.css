@@ -19,3 +19,9 @@
 .map__cur-coords{
     left: 20px;
 }
+
+main{
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 25vh;
+}

@@ -10,7 +10,9 @@
     top: 0;
 }
 
-.map__map-image{
+.map__map-image, .map__data-wrapper{
+    width: 65vw;
+    height: 80vh;
     -webkit-user-drag: none;
 }
 

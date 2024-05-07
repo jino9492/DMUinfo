@@ -12,50 +12,59 @@
     <title>Document</title>
 </head>
 <body>
-    <!--header section-->
-    <header class="header__wrapper">
-        <div class="header__left-wrapper">
-            <div class="header__logo">DMUinfo</div>
-            <nav class="header__nav-bar">
-                <a class="header__btn" href="./map-page.html">지도 보기</a>
-                <a class="header__btn" href="">모아 보기</a>
-            </nav>
-        </div>
-        <div class="header__sign-section">
-            <a class="header__btn " href="./signin-page.html">로그인</a>
-            <a class="header__btn header__signup" href="">회원 가입</a>
-        </div>
-    </header>
-    <!--map section-->
-    <main>
-        <section class="map__map-section">
-            <div class="map__cur-coords">(null,null)</div>
-            <!--map data anchor-->
-            <div class="map__data-wrapper">
-                <div class="map__marker" id="map__marker1"></div>
-                <div class="map__data" id="map__data1">
-                    <div class="map__data-upper-section">
-                        <div class="map__data-image" id="map__data-image1">ㅁㄴㅇㄹ</div>
-                        <h3>백소정</h3>
-                        <div>★★★★★</div>
-                    </div>
-                    <p>qwerqwerqwer</p>
-                </div>
+    <div class="cotent-wrapper">
+        <!--header section-->
+        <header class="header__wrapper">
+            <div class="header__left-wrapper">
+                <div class="header__logo">DMUinfo</div>
+                <nav class="header__nav-bar">
+                    <a class="header__btn" href="./map-page.html">지도 보기</a>
+                    <a class="header__btn" href="">모아 보기</a>
+                </nav>
             </div>
-            <!---->
-            <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
-        </section>
-        <section class="map__iframe-section">
-            <iframe name="map-target"></iframe>
-        </section>
-    </main>
+            <div class="header__sign-section">
+                <a class="header__btn " href="./signin-page.html">로그인</a>
+                <a class="header__btn header__signup" href="">회원 가입</a>
+            </div>
+        </header>
+        <!--map section-->
+        <main>
+            <section class="map__map-section">
+                <div class="map__cur-coords">(null,null)</div>
+                <!--map data anchor-->
+                <div class="map__data-wrapper">
+                    <div class="map__marker" id="map__marker1"></div>
+                    <div class="map__data" id="map__data1">
+                        <div class="map__data-upper-section">
+                            <div class="map__data-image" id="map__data-image1">ㅁㄴㅇㄹ</div>
+                            <h3>백소정</h3>
+                            <div>★★★★★</div>
+                        </div>
+                        <p>qwerqwerqwer</p>
+                    </div>
+                </div>
+                <!---->
+                <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
+            </section>
+            <section class="map__iframe-section">
+                <iframe name="map-target"></iframe>
+            </section>
+        </main>
+    </div>
     <footer>
         <div class="footer__lc">
             <div class="footer__flogo">
                 <a href="#">DMUinfo</a>
             </div>
-            <div class="footer__copyright">
-                ⓒ 2024 동양미래대학교 컴퓨터소프트웨어공학 Team 6 All Right Reserved.
+            <div class="footer__contents-wrapper">
+                <div class="footer__nav-bar">
+                    <a class="footer__nav-link" href="#">이용약관</a>
+                    <a class="footer__nav-link" href="#">개인정보처리방침</a>
+                    <a class="footer__nav-link" href="#">운영정책</a>
+                    <a class="footer__nav-link" href="#">공지사항</a>
+                    <a class="footer__nav-link" href="#">Contact Us</a>
+                </div>
+                <div class="footer__copyright">ⓒ 2024 동양미래대학교 컴퓨터소프트웨어공학 Team 6 All Right Reserved.</div>
             </div>
         </div>
         <div class="footer__st">

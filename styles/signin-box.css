@@ -4,47 +4,45 @@ body{
 }
 
 h1{
-        font-size: 2.5vw;
+        font-size: 2vw;
         margin: 0;
 }
 
 .input__loginbox{
         width: 35vw;
-        height: 65vh;
-        margin: 10vh auto 0;
+        height: 50vh;
+        margin: 8vh auto 0;
         padding: 2vw 0;
         border-radius: 2.5vw;
         background-color: white;
-        box-shadow: 4px 4px 4px rgb(0 0 0 / 0.25);
+        box-shadow: .2vw .2vw .2vw rgb(0 0 0 / 0.25);
         user-select: none;
 
         animation: fadein 1.5s;
 }
 .input__id{
         width: 28vw;
-        font-size: 1.1vw;
+        font-size: 0.9vw;
 }
 .input__password{
         width: 28vw;
-        font-size: 1.1vw;
+        font-size: 0.9vw;
 }
 .input__textbox{
         box-sizing: border-box;
         width: 100%;
         height: 5vh;
-        margin-top: 10px;
-        padding: 0 20px;
+        margin-top: 1.2vh;
+        padding: 0 1.2vw;
         font-size: .8vw;
         border-radius: .5vw;
         border-style: solid;
-        border-width: 1px;
+        border-width: .08px;
         border-color: #B0B0B0;
-}
-.input__textbox{
         outline: none;
 }
 .input__password-find{
-        margin-top: 10px
+        margin-top: 1vh;
 }
 .input__password-find > a{
         text-decoration: none;
@@ -75,7 +73,7 @@ h1{
         cursor: pointer;
 }
 .input__join-membership{
-        margin-top: 10px;
+        margin-top: 1vh;
         text-align: center;
         font-size: .8vw;
 }

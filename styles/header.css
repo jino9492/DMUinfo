@@ -3,11 +3,11 @@
     top:0;
     z-index: 1;
     width: 100vw;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 8.5vh;
-    font-size: 1vw;
+    font-size: .8vw;
     background-color: white;
     user-select: none;
     border-bottom: 1px solid #F0F0F0;
@@ -16,41 +16,43 @@
 .header__left-wrapper{
     display: flex;
     flex-direction: row;
-    padding-left: 30px;
+    padding-left: 7vw;
 }
 
 .header__logo{
-    line-height: 8.5vh;
-    font-size: 2.5vw;
+    font-family: "yg-jalnan";
+    line-height: 7vh;
+    font-size: 2.1vw;
     font-weight: bold;
     color: #3B4FFF;
 }
 
 .header__sign-section{
-    padding-right: 2vw;
+    padding-right: 7vw;
 }
 
 .header__btn{
-    line-height: 8.5vh;
+    line-height: 7vh;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 40px;
+    margin-left: 2.5vw;
     color: black;
     padding: .8vw 0;
 }
 
 .header__signup{
     display: inline-block;
-    line-height: 3vh;
+    line-height: 1.5vh;
     color: white;
     background-color: #7E8BFF;
     padding-left: .8vw;
     padding-right: .8vw;
-    border-radius: .8vw;
+    border-radius: .5vw;
 }
 
-.header__signup:hover{
+.header__btn:hover{
     -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
     transform: scale(1.05);
+    font-size: 1.05em;
 }

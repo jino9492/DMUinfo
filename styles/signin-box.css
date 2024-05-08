@@ -7,18 +7,20 @@ h1{
         font-size: 2vw;
         margin: 0;
 }
-
+.content{
+        padding: 8vh 0;
+}
 .input__loginbox{
         width: 35vw;
         height: 50vh;
-        margin: 8vh auto 0;
+        margin: 0 auto;
         padding: 2vw 0;
         border-radius: 2.5vw;
         background-color: white;
         box-shadow: .2vw .2vw .2vw rgb(0 0 0 / 0.25);
         user-select: none;
 
-        animation: fadein 1.5s;
+        animation: fadein 1s;
 }
 .input__id{
         width: 28vw;

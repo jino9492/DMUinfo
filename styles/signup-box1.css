@@ -1,0 +1,94 @@
+.signup__box{
+    margin: 8vh auto;
+    width: 35vw;
+    height: 95vh;
+    background-color: white;
+    background: #FFFFFF;
+    box-shadow: .2vw .2vw .2vw rgb(0 0 0 / 0.25);
+    border-radius: 2.5vw;
+    padding: 2vw 0;
+
+    animation: fadein 1.5s;
+}
+.signup__form-box{
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.signup__ToU-text{
+    font-size: 1vw;
+    margin: 0;
+    margin-bottom: 1vh;
+}
+.signup__checkbox{
+    margin: auto 0;
+    width: 1.2vw;
+    height: 1.2vh;
+}
+.signup__agree-btn{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    top: -1px;
+    line-height: 2.5vh;
+    font-size: .6vw;
+}
+.signup__signup{
+    font-size: 2vw;
+    margin-bottom: none;
+}
+textarea{
+    border-width: .1vw;
+    font-size: 1vw;
+    padding: .5vw;
+    width: 100%;
+    height: 25vh;
+    resize: none;
+}
+textarea:focus{
+    outline: none;
+}
+.signup__btn-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    height: 5vh;
+    margin: 0 auto;
+}
+.signup__return-btn{
+    margin-right: 1vw;
+    background-color: #FFFFFF;
+    border-color: #f0f0f0;
+    color: #979797;
+}
+.signup__next-btn{
+    margin-left: 1vw;
+    background-color: #7E8BFF;
+    border-color: #7E8BFF;
+    color: #FFFFFF;
+}
+
+.signup__btn{
+    display: inline-block;
+    border-style: solid;
+    border-radius: .6vw;
+    border-width: .1vw;
+    line-height: 5vh;
+    padding: 0 .8vw;
+    font-size: .8vw;
+    text-decoration: none;
+}
+
+@keyframes fadein {
+    from {
+            transform: translateY(-10px);
+            opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

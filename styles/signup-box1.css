@@ -111,7 +111,7 @@ textarea:focus{
 }
 
 
-.signup__input-wrapper > input, 
+.signup__input-wrapper > input,
 .signup__input-wrapper > label input[type="text"],
 .signup__input-wrapper > label input[type="email"]{
     box-sizing: border-box;
@@ -126,6 +126,16 @@ textarea:focus{
     border-color: #B0B0B0;
     outline: none;
 }
+
+.signup__input-wrapper{
+    font-size: 1vw;
+}
+
+.signup__input-wrapper > span{
+    color: red;
+}
+
+.signup__input-wrapper
 
 .signup__gender-wrapper{
     margin-top: 1.5vh;
@@ -145,6 +155,10 @@ textarea:focus{
     background-color: #bbbbbb;
     color: #444444;
     font-weight: bold;
+}
+
+.signup__input-wrapper > input[type="date"]::-webkit-calendar-picker-indicator{
+    cursor: pointer;
 }
 
 input[type="radio"]{

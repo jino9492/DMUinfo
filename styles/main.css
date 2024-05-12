@@ -1,0 +1,213 @@
+@charset "utf-8";
+*{
+    padding: 0; margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+.main__title-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../assets/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw; height: 93vh;
+    position: relative;
+    background-color: azure;
+}
+.main__title{
+    width: 40vw;
+    padding-right: 20vw;
+}
+.main__title>h1{
+    font-weight: normal;
+    font-size: 2.5vw;
+    color: white;
+    letter-spacing: -0.05em;
+}
+.main__title>h1>span{
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 -2.5vh 0 #3B4FFF;
+}
+.main__title>p{
+    font-size: 1vw;
+    color: white;
+    margin-top: 2vw;
+    letter-spacing: -0.05em;
+
+    animation-delay: 1s;
+}
+.main__signup-button{
+    display: inline-block;
+    line-height: 1.5vh;
+    color: white;
+    background-color: #7E8BFF;
+    padding: 1.5vh .8vw;
+    border-radius: .5vw;
+    margin-top: 2vw;
+    border: .1vw solid #7E8BFF;
+    font-size: .8vw;
+    color: white;
+}
+.main__title>h1{
+    animation: fadein-horizontal1 1s;
+}
+.main__title>p, .main__signup-button{
+    animation: fadein-horizontal2 1s;
+}
+.main__section1{
+    width: 100%; height: 105vh;
+    background-color: #F4F5FF;
+    position: relative;
+}
+.section1__title{
+    text-align: center;
+    font-size: 2.2vw;
+    padding: 8vh 0;
+}
+.section1__service{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50vw; height: 70vh;
+}
+.section1__sub-section{
+    box-sizing: border-box;
+    width: 15.5vw; height: 32.5vh;
+    padding: 1.5vw;
+    margin: 0 auto;
+    float: left;
+    word-break: break-all;
+    background-color: white;
+    opacity: 0;
+}
+.section1__sub-section img{
+    width: 4vw;
+    height: auto;
+}
+.section1__sub-section p{
+    font-size: 1vw;
+    padding: 0;
+    margin-top: 1vh
+}
+.section1__sub-section p.section1__sub-title{
+    font-size: 1.2vw;
+    padding: 0;
+}
+.section1__sub-section1.on, .section1__sub-section4.on{
+    animation: fadein-vertical1 1s;
+}
+.section1__sub-section2.on, .section1__sub-section5.on{
+    animation: fadein-vertical2 1s;
+}
+.section1__sub-section3.on, .section1__sub-section6.on{
+    animation: fadein-vertical3 1s;
+}
+.section1__sub-section.on{
+    opacity: 1;
+}
+.section1__sub-title{
+    font-weight: 800;
+}
+.main__section2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%; height: 70vh;
+    background-color: #F0F0F0;
+    position: relative;
+}
+.section2__more{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw; height: 50vh;
+    margin: 0 auto;
+}
+.section2__bogie{
+    width: 15vw; height: 50vh;
+    display: inline-block;
+    background-color: #D9D9D9;
+}
+.main__section2>a{
+    width: 10vw;
+    margin: 0 auto;
+    font-size: 1vw;
+    text-decoration: none;
+}
+.main__section2>a:hover{
+    text-decoration: underline;
+}
+
+@keyframes fadein-vertical1{
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    20%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-vertical2{
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    45%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-vertical3{
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    70%{
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-horizontal1{
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    20%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-horizontal2{
+    from {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

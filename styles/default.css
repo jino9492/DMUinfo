@@ -37,6 +37,22 @@ body{
     padding-bottom: 25vh;
 }
 
+.colored-button{
+    display: inline;
+    color: white ;
+    background-color: #7E8BFF ;
+    padding: 1.2vh .6vw ;
+    border-radius: .6vw ;
+    font-size: .8vw ;
+    border: 0;
+    text-decoration: none;
+}
+.colored-button:hover{
+    transition: .3s;
+    cursor: pointer;
+    background-color: #4B4FFF;
+}
+
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');

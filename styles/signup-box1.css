@@ -75,29 +75,16 @@ textarea:focus{
     background-color: #FFFFFF;
     border-color: #f0f0f0;
     color: #979797;
-}
-.signup__next-btn{
-    margin-left: 1vw;
-    background-color: #7E8BFF;
-    border-color: #7E8BFF;
-    color: #FFFFFF;
-}
-
-.signup__btn{
-    display: inline-block;
     border-style: solid;
     border-radius: .6vw;
     border-width: .1vw;
     line-height: 5vh;
     padding: 0 .8vw;
     font-size: .8vw;
-    text-decoration: none;
 }
-.signup__btn:hover{
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    transform: scale(1.02);
-    cursor: pointer;
+.signup__btn{
+    display: inline-block;
+    text-decoration: none;
 }
 
 @keyframes fadein {

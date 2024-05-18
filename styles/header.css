@@ -39,19 +39,3 @@
     font-weight: bold;
     margin-left: 2.5vw;
 }
-
-.header__signup{
-    display: inline-block;
-    line-height: 1.5vh;
-    color: white;
-    background-color: #7E8BFF;
-    padding-left: .8vw;
-    padding-right: .8vw;
-    border-radius: .5vw;
-}
-
-.header__btn:hover{
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
-    transform: scale(1.05);
-}

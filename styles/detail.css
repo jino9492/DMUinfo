@@ -21,13 +21,13 @@ body {
 }
 
 .detail__title p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     margin-bottom: 1vh;
 }
 
 .detail__title span {
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: normal;
     color: #666;
     margin-left: .5vw;
@@ -40,13 +40,13 @@ body {
 }
 
 .detail__title-area p {
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .detail__image-area{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5vh;
+    margin: 5vh 0;
 }
 
 /* img, iframe 크기를 절대적으로 지정해줘서 웹 환경이 바뀌면 어색해짐. 어떻게하는지 모르겠음 ㅠ */
@@ -56,14 +56,14 @@ body {
 }
 
 .detail__image-area iframe{
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     border: none;
     background-color: #666;
 
 }
 .detail__text-area p{
-    font-size: 1.2vw;
+    font-size: .8vw;
 }
 
 .detail__comments-wrapper{

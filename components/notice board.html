@@ -1,0 +1,175 @@
+<!--통합게시판 html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>bulletin board</title>
+        <link rel="stylesheet" href="../styles/notice board-style.css" type="text/css">
+    </head>
+    <body style="background-color: #f0f0f0;">
+       <section>
+            <div class="board__box">
+                <h1>통합 게시판</h1>
+                <p class="subtitle">모든 게시판의 내용물을 모아놓은 공간입니다.</p>
+
+                <div class="input__box">
+                    <select class="select__box">
+                        <option value="title" selected hidden disabled>제목</option>
+                        <option value="writer">글쓴이</option>
+                        <option value="title+content">제목+내용</option>
+                        <option value="content">내용</option>
+                    </select>
+                    <input type="search" class="search__box">
+                </div>
+                <hr>
+
+                <table class="table">
+                    <colgroup>
+                        <col style="width: 2.5vw;">
+                        <col style="width: 2.5vw;">
+                        <col style="width: 40vw;">
+                        <col style="width: 10vw;">
+                        <col style="width: 4vw;">
+                        <col style="width: 4vw;">
+                        </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>유형</th>
+                            <th class="table__thead-title">제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <label>
+                            <tr  class="fixation">
+                                <td>▷</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="이용약관.html" target="_blank">이용약관 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr  class="fixation">
+                                <td>▷</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="개인정보.html" target="_blank">개인정보처리방침 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr  class="fixation">
+                                <td>▷</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="운영정책.html" target="_blank">운영정책 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr class="fixation">
+                                <td>▷</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="공지사항.html" target="_blank">공지사항</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>7</td>
+                                <td class="filter__freedom">자유</td>
+                                <td class="table__thead-title"><a href="자유게시판.html" target="_blank">~~~~~~</a></td>
+                                <td>사용자3</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>6</td>
+                                <td class="filter__freedom">자유</td>
+                                <td class="table__thead-title"><a href="자유게시판.html" target="_blank">사이트 망한거 같으면 개추ㅋㅋ</a></td>
+                                <td>사용자2</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>5</td>
+                                <td class="filter__debate">토론</td>
+                                <td class="table__thead-title"><a href="자유게시판.html" target="_blank">○○○ 고척점 내용 설명에 대하여</a></td>
+                                <td>사용자1</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>4</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="자유게시판.html" target="_blank">이용약관 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>3</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="운영정책.html" target="_blank">운영정책 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>2</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="개인정보.html" target="_blank">개인정보처리방침 관련 안내</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                        <label>
+                            <tr>
+                                <td>1</td>
+                                <td class="filter__announcement">공지</td>
+                                <td class="table__thead-title"><a href="공지사항.html" target="_blank">공지사항</a></td>
+                                <td>관리자</td>
+                                <td>2024.05.14</td>
+                                <td>1,004</td>
+                            </tr>
+                        </label>
+                    </tbody>
+                </table>
+                
+                <div class="filter">
+                    <span>필터 · <a href="filter__announcement.html" class="filter__announcement">공지</a> | 
+                                <a href="filter__debate.html" class="filter__debate">토론</a> | 
+                                <a href="filter__freedom.html" class="filter__freedom">자유</a>
+                    </span>
+                    <span class="writing"><a href="게시글 작성.html" target="_blank">🖉 글쓰기</a></span>
+                </div>
+                
+                <div class="page">
+                    <input type="button" class="page__button" value="&lt;">
+                    <div class="page__first-page"><a href="notice board.html">1</a></div>
+                    <input type="button" class="page__button" value="&gt;">
+                </div>
+            </div>
+       </section> 
+    </body>
+</html>

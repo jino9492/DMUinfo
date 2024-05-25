@@ -23,13 +23,13 @@ body {
     margin-top: 5vh;
 }
 .detail__title p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
     margin-bottom: 1vh;
 }
 
 .detail__title span {
-    font-size: 1.5vw;
+    font-size: 1vw;
     font-weight: normal;
     color: #666;
     margin-left: .5vw;
@@ -42,7 +42,7 @@ body {
 }
 
 .detail__title-area p {
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .detail__image-area{
@@ -57,8 +57,8 @@ body {
 }
 
 .detail__image-area iframe{
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     border: none;
     background-color: #666;
 

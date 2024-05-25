@@ -1,0 +1,146 @@
+/*통합게시판 css*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'notosans';
+}
+.board__box{
+    background-color: #ffffff;
+    width: 80vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 7vw;
+    height: auto;
+}
+h1 {
+    font-size: 2vw;
+}
+h1 > a {
+    color: black;
+    text-decoration: none;
+}
+.subtitle {
+    color: #8c8c8c;
+    font-size: 0.7vw;
+}
+.input__box {
+    height: 3vh;
+    float: right;
+}
+.select__box {
+    width: 5.5vw;
+    height: 3vh;
+    border-radius: 0.3vw;
+    border-style: none;
+    background-color: #f0f0f0;
+    font-weight: 600;
+    font-size: 0.7vw;
+    padding-left: 0.5vw;
+}
+select > option {
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+.search__box {
+    width: 20vw;
+    height: 3vh;
+    border-radius: 0.3vw;
+    border-style: none;
+    background-color: #f0f0f0;
+
+    background-size: 1.2vw;
+    background-repeat: no-repeat;
+    background-position: 0.7vw 0.4vw;
+    background-image: url("../assets/search img.png");
+    padding: 0vw 0vw 0vw 2.5vw;
+}
+hr {
+    border: 0.05vw solid #dcdcdc;
+    margin-top: 3vw;
+}
+.table{
+    width: 66vw;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.7vw;
+    border-bottom: 0.05vw solid #cdcdcd;
+    border-spacing: 0;
+}
+thead tr {
+    height: 2vw;
+}
+tbody tr {
+    height: 3.5vw;
+}
+.table td {
+    border-top: 0.05vw solid #cbcbcb;
+}
+.table__thead-title {
+    text-align: left;
+    padding: 0vw 1vw;
+}
+.table__thead-title > a {
+    text-decoration: none;
+    color:  black;
+}
+.table__thead-title > a:hover{
+    text-decoration: underline;
+}
+.fixation {
+    background-color: #ebebeb;
+}
+.filter__announcement {
+    color: #ff0000;
+    text-decoration: none;
+}
+.filter__freedom {
+    color: #54A800;
+    text-decoration: none;
+}
+.filter__debate {
+    color: #538DFF;
+    text-decoration: none;
+}
+.filter {
+    padding-top: 0.8vw;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+.writing > a {
+    float: right;
+    color: #4966ff;
+    text-decoration: none;
+} 
+span>.filter__announcement:hover, span>.filter__debate:hover, span>.filter__freedom:hover, .writing>a:hover {
+    text-decoration: underline;
+}
+.page{
+    text-align: center;
+    margin: 1vw;
+}
+.page__button {
+    color: white;
+    border: 0.1vw solid #c7c7c7;
+    background-color: #c7c7c7;
+    width: 1.4vw;
+    height: 1.4vw;
+    border-radius: 0.7vw;
+    font-size: 0.8vw;
+    font-weight: 00;
+    margin: 1vw;
+    text-align: center;
+}
+.page__first-page {
+    display: inline-block;    
+}
+.page__first-page > a {
+    text-decoration: none;
+    color: black;
+    padding: 0.6vw;
+    font-size: 0.8vw;
+}
+.page__first-page > a:hover {
+    color: white;
+    background-color: #5182ff;
+    padding: 0.3vw 0.6vw;
+}

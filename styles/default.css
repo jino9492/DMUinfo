@@ -49,6 +49,7 @@ body{
 }
 .colored-button:hover{
     transition: .3s;
+    -webkit-transition: .3s;
     cursor: pointer;
     background-color: #4B4FFF;
 }

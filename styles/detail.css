@@ -19,7 +19,9 @@ body {
     height: auto;
     background-color: white;
 }
-
+.detail__main-content{
+    margin-top: 5vh;
+}
 .detail__title p {
     font-size: 2vw;
     font-weight: bold;
@@ -44,9 +46,8 @@ body {
 }
 
 .detail__image-area{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5vh;
+    float: right;
+    margin: .5vh 1vw;
 }
 
 /* img, iframe 크기를 절대적으로 지정해줘서 웹 환경이 바뀌면 어색해짐. 어떻게하는지 모르겠음 ㅠ */
@@ -63,20 +64,44 @@ body {
 
 }
 .detail__text-area p{
+    text-align: justify;
+    text-indent: 1vw;
     font-size: 1.2vw;
 }
-
+.detail__map-frame-wrapper{
+    clear: both;
+    margin-top: 10vh;
+}
+.detail__map-frame-title{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+.detail__map-frame-wrapper > iframe{
+    width: 100%;
+    height: 50vh;
+}
 .detail__comments-wrapper{
     margin-top: 20vh;
 }
+.detail__comments-wrapper > h3{
+    font-size: 1.8vw;
+}
+.detail__user{
+    font-size: 1.1vw;
+}
 
-.user{
-    padding: 1vw;
-    display: flex;
+.detail__user-eva{
+    font-size: 1.2vw;
+    color: orange;
+    margin-left: 1vw;
 }
 
 .detail__comment{
+    font-size: 1vw;
     height: 7.5vh;
+    text-indent: 1vw;
+    margin-top: 1vh;
     border-bottom: solid .1vw lightgray;
 }
 
@@ -85,7 +110,7 @@ body {
     height: 15vh;
     box-sizing: border-box;
     border: solid 1px lightgray;
-    border-radius: 10px;
+    border-radius: 1vw;
     padding: 2vh 1.5vw;
     font-family: Arial, Helvetica, sans-serif;
     resize: none;
@@ -97,9 +122,10 @@ body {
     margin: 2vh 0;
 }
 .detail__submit-wrapper{
-    display: flex;
-    justify-content: space-between;
+    float:right;
 }
 .detail__submit-eva{
     display: inline-block;
+    font-size: 1.2vw;
+    margin-right: 5vw;
 }

@@ -136,10 +136,12 @@
 
 @keyframes fadein-vertical1{
     from {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
     20%{
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
@@ -150,10 +152,12 @@
 
 @keyframes fadein-vertical2{
     from {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
     45%{
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
@@ -164,10 +168,12 @@
 
 @keyframes fadein-vertical3{
     from {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
     70%{
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
         opacity: 0;
     }
@@ -178,10 +184,12 @@
 
 @keyframes fadein-horizontal1{
     from {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
         opacity: 0;
     }
     20%{
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
         opacity: 0;
     }
@@ -192,10 +200,12 @@
 
 @keyframes fadein-horizontal2{
     from {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
         opacity: 0;
     }
     60%{
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
         opacity: 0;
     }

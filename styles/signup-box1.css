@@ -89,6 +89,7 @@ textarea:focus{
 
 @keyframes fadein {
     from {
+            -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
             opacity: 0;
     }

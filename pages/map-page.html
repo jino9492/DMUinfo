@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/defaultvs.css">
+    <link rel="stylesheet" href="../styles/default.css">
     <link rel="stylesheet" href="../styles/map-page.css">
     <link rel="stylesheet" href="../styles/map.css">
     <link rel="stylesheet" href="../styles/header.css" >
@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="cotent-wrapper">
+    <div class="content-wrapper">
         <!--header section-->
         <header class="header__wrapper">
             <div class="header__left-wrapper">
@@ -29,23 +29,7 @@
         </header>
         <!--map section-->
         <main>
-            <section class="map__map-section">
-                <div class="map__cur-coords">(null,null)</div>
-                <!--map data anchor-->
-                <div class="map__data-wrapper">
-                    <div class="map__marker" id="map__marker1"></div>
-                    <div class="map__data" id="map__data1">
-                        <div class="map__data-upper-section">
-                            <div class="map__data-image" id="map__data-image1">ㅁㄴㅇㄹ</div>
-                            <h3>백소정</h3>
-                            <div>★★★★★</div>
-                        </div>
-                        <p>qwerqwerqwer</p>
-                    </div>
-                </div>
-                <!---->
-                <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
-            </section>
+            
             <section class="map__iframe-section">
                 <iframe name="map-target"></iframe>
             </section>

@@ -12,10 +12,11 @@ body {
 }
 
 .detail__content {
+    overflow: auto;
     width: 80vw;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 7vw;
+    padding: 10vh 12.5vw;
     height: auto;
     background-color: white;
 }
@@ -35,19 +36,21 @@ body {
     margin-left: .5vw;
 }
 
-.detail__title img{
+.detail__avg-eva{
     width: 100px;
+    color: orange !important;
     height: auto;
     margin-left: 30px;
 }
 
 .detail__title-area p {
+    margin-top: 1vh;
     font-size: 1vw;
 }
 
 .detail__image-area{
     float: right;
-    margin: .5vh 1vw;
+    margin: 0 2vw;
 }
 
 /* img, iframe 크기를 절대적으로 지정해줘서 웹 환경이 바뀌면 어색해짐. 어떻게하는지 모르겠음 ㅠ */
@@ -66,7 +69,7 @@ body {
 .detail__text-area p{
     text-align: justify;
     text-indent: 1vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 .detail__map-frame-wrapper{
     clear: both;
@@ -87,6 +90,9 @@ body {
 .detail__comments-wrapper > h3{
     font-size: 1.8vw;
 }
+.detail__comment-wrapper{
+    border-top: solid .1vw lightgray;
+}
 .detail__user{
     font-size: 1.1vw;
 }
@@ -102,7 +108,6 @@ body {
     height: 7.5vh;
     text-indent: 1vw;
     margin-top: 1vh;
-    border-bottom: solid .1vw lightgray;
 }
 
 .detail__comments-wrapper textarea{
@@ -111,7 +116,7 @@ body {
     box-sizing: border-box;
     border: solid 1px lightgray;
     border-radius: 1vw;
-    padding: 2vh 1.5vw;
+    padding: 2vh 1vw;
     font-family: Arial, Helvetica, sans-serif;
     resize: none;
 }
@@ -122,10 +127,23 @@ body {
     margin: 2vh 0;
 }
 .detail__submit-wrapper{
-    float:right;
+    float: right;
+}
+.detail__submit-btn{
+    margin-left: 1vw;
 }
 .detail__submit-eva{
-    display: inline-block;
-    font-size: 1.2vw;
-    margin-right: 5vw;
+    float: left;
+    color: orange;
+    appearance: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.detail__submit-eva::after{
+    content:"☆";
+}
+.detail__submit-eva:checked::after,
+.detail__submit-eva:has(~.detail__submit-eva:checked)::after
+{
+    content:"★";
 }

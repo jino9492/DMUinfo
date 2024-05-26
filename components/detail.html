@@ -10,7 +10,7 @@
 <body>
     <div class="detail__content">
         <div class="detail__title">
-            <p>○○○○고척점<span>맛집</span><img src="./images/star.PNG"></p>
+            <p>○○○○고척점<span>맛집</span><span class="detail__avg-eva">★★★★★</span>
         </div>
         <hr>
         <div class="detail__title-area">
@@ -46,12 +46,19 @@
                     <p>사장님이 맛있고 음식이 친절해요!</p>
                 </div>
             </div>
-            <div class="detail__input-comment">
-                <textarea placeholder="여기에 댓글을 입력" ></textarea>
-                <div class="detail__submit-wrapper">
-                    <div class="detail__submit-eva">★★★★★</div><button type="submit" class="detail__submit-btn colored-button">제출하기</button>
+            <form action="">
+                <div class="detail__input-comment">
+                    <textarea placeholder="여기에 댓글을 입력" ></textarea>
+                    <div class="detail__submit-wrapper">
+                        <input type="radio" class="detail__submit-eva" name="eva" value="1"></input>
+                        <input type="radio" class="detail__submit-eva" name="eva" value="2"></input>
+                        <input type="radio" class="detail__submit-eva" name="eva" value="3" checked></input>
+                        <input type="radio" class="detail__submit-eva" name="eva" value="4"></input>
+                        <input type="radio" class="detail__submit-eva" name="eva" value="5"></input>
+                        <button type="submit" class="detail__submit-btn colored-button">제출하기</button>
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>

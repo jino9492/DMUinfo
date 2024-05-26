@@ -5,10 +5,20 @@
 
 .map__data{
     position: absolute;
+    box-sizing: border-box;
     width: 30vw;
     height: 30vh;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 1vw;
+    padding: 2% 2%;
+}
+
+.map__data p{
+    height: 1.5em;
+    font-size: 1vw;
+    white-space: nowrap;
+    text-overflow: ellipsis ;
+    overflow: hidden;
 }
 
 .map__marker{
@@ -20,23 +30,56 @@
 }
 
 .map__data-upper-section{
+    display: flex;
     height: 50%;
 }
 
 .map__data-image{
     display: inline-block;
+    align-self: center;
     width: 40%;
     height: 80%;
-    margin: 4%;
     background-color: gray;
 }
 
 .map__data-image~h3{
     display: inline-block;
-    height: auto;
+    font-size: 1vw;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 2.5%;
+    height: 20%;
+}
+.map__data-image~div{
+    display: inline-block;
+    color:orange;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    font-size: .8vw;
+    height: 20%;
+}
+.map__data button{
+    padding: 0;
+    box-sizing: border-box;
+    width: 5vh;
+    height: 5vh;
+    font-size: .7vw;
+    border-radius: 500px;
+    border: .1vw solid #3B4FFF;
+    color: #3B4FFF;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 2.5%;
+    float: right;
+}
+.map__data button:hover{
+    transition: 1s;
+    -webkit-transition: .2s;
+    background-color: #3B4FFF;
+    color: white;
 }
 
-#map__data1{top:calc(59.5% - 32.5vh);left:calc(56% - 13.5vw);}
+#map__data1{top:calc(59.5% - 30.5vh);left:calc(56% - 14vw);}
 #map__marker1{top:59.5%;left:56%}
 #map__marker1:hover~#map__data1{display: inline-block;}
-#map__data1:hover{display: inline-block;}
+#map__data1{display: inline-block;}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/map.css">
+    <link rel="stylesheet" href="../styles/map-page.css">
+</head>
+<body>
+    <section class="map__map-section">
+        <div class="map__cur-coords">(null,null)</div>
+        <!--map data anchor-->
+        <div class="map__data-wrapper">
+            <a href="" class="map__marker" id="map__marker1"></a>
+            <div class="map__data" id="map__data1">
+                <div class="map__data-upper-section">
+                    <div class="map__data-image" id="map__data-image1"></div>
+                    <h3>백소정</h3>
+                    <div>★★★★★</div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi impedit provident exercitationem delectus quod laboriosam architecto repudiandae libero officiis iste quidem fugit, voluptatem illo fuga modi odio ratione tempore. Veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aspernatur sint repellat quia qui, hic quod. Harum explicabo, consequatur maiores veniam, non, facilis esse recusandae quod ad rerum aspernatur nam!</p>
+                <button type="button">저장</button>
+                <button type="button">공유</button>
+            </div>
+        </div>
+        <!---->
+        <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
+    </section>
+</body>
+</html>

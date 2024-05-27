@@ -10,9 +10,9 @@
 </head>
 <body>
     <section class="map__map-section">
-        <div class="map__cur-coords">(null,null)</div>
         <!--map data anchor-->
         <div class="map__data-wrapper">
+            <div class="map__cur-coords">(null,null)</div>
             <!--data1-->
             <a href="" class="map__marker" id="map__marker1"></a>
             <div class="map__data" id="map__data1">
@@ -34,13 +34,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="triangle"></div>
             </div>
             <!---->
             <!--data2-->
             <!---->
         </div>
         <!---->
-        <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
+        <img class="map__map-image" src="../assets/map.png" onclick="getCoords(event)">
+        <iframe class="map__detail-data-iframe" src=""></iframe>
     </section>
 </body>
 </html>

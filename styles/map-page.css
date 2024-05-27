@@ -1,6 +1,10 @@
+body{
+    text-align: center;
+}
+
 .map__map-section{
+    display: inline-block;
     position: relative;
-    margin: 20px;
 }
 
 .map__cur-coords{
@@ -11,7 +15,7 @@
 }
 
 .map__map-image, .map__data-wrapper{
-    width: 65vw;
+    width: 70vw;
     height: 80vh;
     -webkit-user-drag: none;
 }

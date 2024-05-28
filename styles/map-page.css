@@ -13,6 +13,7 @@ body{
 }
 
 .map__map-image, .map__data-wrapper{
+    border-radius: 1vw;
     width: 65vw;
     height: 80vh;
     -webkit-user-drag: none;
@@ -22,7 +23,16 @@ body{
     left: 20px;
 }
 
-.map__detail-info-iframe{
+#map__detail-info-iframe{
+    display: inline-block;
+    margin-left: 1vw;
+    box-sizing: border-box;
     width: 25vw;
     height: 80vh;
+    border: 0;
+    border-radius: 1vw;
+    box-shadow: 0 0 .5vw #999;
+}
+#map__detail-info-iframe:target{
+    display: inline-block;
 }

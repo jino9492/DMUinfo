@@ -1,6 +1,8 @@
+body{
+    text-align: center;
+}
 .map__map-section{
-    position: relative;
-    margin: 20px;
+    display: inline-block;
 }
 
 .map__cur-coords{
@@ -18,4 +20,9 @@
 
 .map__cur-coords{
     left: 20px;
+}
+
+.map__detail-info-iframe{
+    width: 25vw;
+    height: 80vh;
 }

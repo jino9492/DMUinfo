@@ -14,7 +14,7 @@
         <!--map data anchor-->
         <div class="map__data-wrapper">
             <!--data1-->
-            <a href="" class="map__marker" id="map__marker1"><div class="triangle-low triangle"></div></a>
+            <a href="../components/data/data1.html" class="map__marker" id="map__marker1" target="map__detail-info-iframe"></a>
             <div class="map__data" id="map__data1">
                 <div class="map__data-content-wrapper">
                     <div class="map__data-upper-section">
@@ -37,7 +37,7 @@
             </div>
             <!---->
             <!--data2-->
-            <a href="" class="map__marker" id="map__marker2"><div class="triangle-high triangle"></div></a>
+            <a href="../components/data/data2.html" class="map__marker" id="map__marker2" target="map__detail-info-iframe"></a>
             <div class="map__data" id="map__data2">
                 <div class="map__data-content-wrapper">
                     <div class="map__data-upper-section">
@@ -62,6 +62,7 @@
         </div>
         <!---->
         <img class="map__map-image" src="../assets/map.png" usemap="#dongyang-map" onclick="getCoords(event)">
+        <iframe src="" class="map__detail-info-iframe" name="map__detail-info-iframe"></iframe>
     </section>
 </body>
 </html>

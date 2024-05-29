@@ -12,8 +12,8 @@
 <body>
     <section class="map__map-section">
         <!--map data anchor-->
-        <div class="map__data-wrapper">
-            <div class="map__cur-coords">(null,null)</div>
+        <div class="map__data-wrapper" onclick="getCoords(event)">
+            <div class="map__cur-coords">( 0 , 0 )</div>
             <!--data1-->
             <a href="../components/data/data1.html" class="map__marker" id="map__marker1" target="map__detail-info-iframe">
                 <div class="map__anchor-circle"></div>
@@ -76,5 +76,14 @@
         <!---->
         <iframe src="../components/data/no-data.html" id="map__detail-info-iframe" name="map__detail-info-iframe"></iframe>
     </section>
+
+    <script>
+        function getCoords(event) {
+            var xCoordinate = event.offsetX;
+            var yCoordinate = event.offsetY;
+            var text = "(" + xCoordinate + "," + yCoordinate + ")";
+            document.getElementsByClassName("map__cur-coords")[0].innerHTML=text;
+        }
+    </script>
 </body>
 </html>

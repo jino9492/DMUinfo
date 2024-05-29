@@ -10,6 +10,12 @@ body{
     user-select: none;
     pointer-events: none;
     top: 0;
+    background-color: white;
+    font-size: 1vw;
+    border-radius: 1vw;
+    padding: .5%;
+    margin: .5%;
+    border: .1vw solid #DDD;
 }
 
 .map__map-image, .map__data-wrapper{
@@ -17,10 +23,6 @@ body{
     width: 65vw;
     height: 80vh;
     -webkit-user-drag: none;
-}
-
-.map__cur-coords{
-    left: 20px;
 }
 
 #map__detail-info-iframe{

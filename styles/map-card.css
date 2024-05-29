@@ -1,0 +1,169 @@
+body{margin:0; overflow-x: hidden;}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #999;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+.map-card__contnet-wrapper img{
+    width: 100vw;
+    height: 25vh;
+}
+.map-card__contnet-wrapper h1{
+    text-indent: 2.5vw;
+    font-weight: 400;
+    font-size: 8vw;
+    margin: 1vh 0;
+}
+.map-card__user-eva{
+    display: inline-block;
+    text-indent: 2.5vw;
+    font-size: 5vw;
+    color: orange;
+}
+.map-card__menu-wrapper{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    margin: 5vh 0;
+    line-height: 5vh;
+    z-index: 10;
+}
+.map-card__menu{
+    color: #999;
+    font-size: 3.5vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+.map-card__menu:hover{
+    /*color: #7E8BFF;*/
+    color: black;
+}
+.map-card__menu.active{
+    color: #7E8BFF;
+    border-bottom: .5vw solid #7E8BFF;
+}
+.map-card__user-eva-number{
+    display: inline-block;
+    margin-left: 1vw;
+    height: 2vh;
+    color: #999;
+    font-size: 3vw;
+}
+.map-card__func-btns-wrapper{
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    border-bottom: .1vw solid #DDD;
+}
+.map-card__func-btn-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw
+}
+.map-card__func-btn-wrapper div{
+    display: inline-block;
+    width: 12vw;
+    height: 12vw;
+    color: #3B4FFF;
+    font-weight: bold;
+    font-size: 3vw;
+    text-align: center;
+    user-select: none;
+    margin-top: 5%;
+}
+.map-card__func-btn-wrapper button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 500px;
+    border: .1vw solid #3B4FFF;
+    background-color: white;
+    cursor: pointer;
+}
+.map-card__func-btn-wrapper button img{
+    position: relative;
+    width: 50%;
+    height: 50% ;
+    -webkit-filter: invert(24%) sepia(97%) saturate(3280%) hue-rotate(232deg) brightness(102%) contrast(103%);
+    filter: invert(24%) sepia(97%) saturate(3280%) hue-rotate(232deg) brightness(102%) contrast(103%);
+}
+.map-card__func-btn-wrapper button:hover{
+    transition: 1s;
+    -webkit-transition: .2s;
+    background-color: #3B4FFF;
+}
+.map-card__func-btn-wrapper button:hover img{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+#summary{
+    text-align: justify;
+    font-size: 4vw;
+    padding: 5vh 5%;
+    padding-bottom: 5vh;
+    border-bottom: .1vw solid #DDD;
+}
+#summary p{
+    line-height: 2em;
+}
+#comment{
+    padding: 5vh 5%;
+    border-bottom: .1vw solid #DDD;
+}
+.map-card__title{
+    font-size: 4.5vw;
+    font-weight: bold;
+    margin-bottom: 5vh;
+}
+.map-card__user{
+    font-size: 4vw;
+}
+.map-card__user-eva{
+    font-size: 3vw;
+    color: orange;
+    margin-left: 1vw;
+}
+.map-card__comment{
+    font-size: 3vw;
+    text-indent: 2vw;
+    margin-bottom: 5vh;
+}
+.map-card__create-comment{
+    margin-top: 1vh;
+}
+.map-card__create-comment > a{
+    text-decoration: none;
+    color: #7E8BFF;
+    font-size: 3vw;
+}
+.map-card__create-comment > a:hover{
+    text-decoration: underline;
+}
+#info{
+    padding: 5vh 5%;
+}
+.map-card__info-wrapper{
+    margin-top: 8vh;
+    font-size: 3vw;
+}
+.map-card__info-wrapper>span{
+    font-weight: bold;
+}

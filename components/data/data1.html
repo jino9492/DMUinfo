@@ -4,125 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body{margin:0; overflow-x: hidden;}
-        /* width */
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            border-radius: 5px;
-            background: #999;
-        }
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: #888;
-        }
-        .map-card__contnet-wrapper img{
-            width: 100vw;
-            height: 25vh;
-        }
-        .map-card__contnet-wrapper h1{
-            text-indent: 2.5vw;
-            font-weight: 400;
-            font-size: 8vw;
-            margin: 1vh 0;
-        }
-        .map-card__user-eva{
-            display: inline-block;
-            text-indent: 2.5vw;
-            font-size: 5vw;
-            color: orange;
-        }
-        .map-card__menu-wrapper{
-            background-color: white;
-            display: flex;
-            justify-content: space-around;
-            position: sticky;
-            top: 0;
-            margin: 5vh 0;
-            line-height: 5vh;
-        }
-        .map-card__menu{
-            color: #999;
-            font-size: 3.5vw;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .map-card__menu:hover{
-            /*color: #7E8BFF;*/
-            color: black;
-        }
-        .map-card__menu.active{
-            color: #7E8BFF;
-            border-bottom: .5vw solid #7E8BFF;
-        }
-        .map-card__user-eva-number{
-            display: inline-block;
-            margin-left: 1vw;
-            height: 2vh;
-            color: #999;
-            font-size: 3vw;
-        }
-        #summary{
-            text-align: justify;
-            font-size: 4vw;
-            padding: 0 5%;
-            padding-bottom: 5vh;
-            border-bottom: .1vw solid #DDD;
-        }
-        #summary p{
-            line-height: 2em;
-        }
-        #comment{
-            padding: 5%;
-            border-bottom: .1vw solid #DDD;
-        }
-        .map-card__title{
-            font-size: 4.5vw;
-            font-weight: bold;
-            margin-bottom: 5vh;
-        }
-        .map-card__user{
-            font-size: 4vw;
-        }
-        .map-card__user-eva{
-            font-size: 3vw;
-            color: orange;
-            margin-left: 1vw;
-        }
-        .map-card__comment{
-            font-size: 3vw;
-            text-indent: 2vw;
-            margin-bottom: 5vh;
-        }
-        .map-card__create-comment{
-            margin-top: 1vh;
-        }
-        .map-card__create-comment > a{
-            text-decoration: none;
-            color: #7E8BFF;
-            font-size: 3vw;
-        }
-        .map-card__create-comment > a:hover{
-            text-decoration: underline;
-        }
-        #info{
-            padding: 5%;
-        }
-        .map-card__info-wrapper{
-            margin-top: 8vh;
-            font-size: 3vw;
-        }
-        .map-card__info-wrapper>span{
-            font-weight: bold;
-        }
-    </style>
+    <link rel="stylesheet" href="../../styles/map-card.css">
 </head>
 <body>
     <div class="map-card__contnet-wrapper">
@@ -133,6 +15,16 @@
             <a href="#summary" class="map-card__menu active" onclick="activeMenu(event)">개요</a>
             <a href="#comment" class="map-card__menu" onclick="activeMenu(event)">댓글</a>
             <a href="#info" class="map-card__menu" onclick="activeMenu(event)">정보</a>
+        </div>
+        <div class="map-card__func-btns-wrapper">
+            <div class="map-card__share-btn-wrapper map-card__func-btn-wrapper">
+                <button type="button"><img src="../../assets/share mark.png" alt=""></button>
+                <div>공유</div>
+            </div>
+            <div class="map-card__restore-btn-wrapper map-card__func-btn-wrapper">
+                <button type="button"><img src="../../assets/restore mark.png" alt=""></button>
+                <div>저장</div>
+            </div>
         </div>
         <div id="summary">
             <div class="map-card__title">개요</div>
@@ -186,6 +78,7 @@
             }
             event.target.classList.add("active");
         }
+
     </script>
 </body>
 </html>

@@ -1,6 +1,9 @@
 body{
     text-align: center;
 }
+main{
+    margin-top: 6vh;
+}
 .map__map-section{
     display: inline-block;
 }
@@ -34,7 +37,22 @@ body{
     border: 0;
     border-radius: 1vw;
     box-shadow: 0 0 .5vw #999;
+
+    animation: fadein-vertical 1s;
 }
-#map__detail-info-iframe:target{
-    display: inline-block;
+
+@keyframes fadein-vertical{
+    from {
+        -webkit-transform: translateY(-3vh);
+        transform: translateY(-3vh);
+        opacity: 0;
+    }
+    20%{
+        -webkit-transform: translateY(-3vh);
+        transform: translateY(-3vh);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: #D9D9D9;
+    background-color: #EEE;
     font-family: "Arial", sans-serif;
     line-height: 1.6;
 }
@@ -49,14 +49,27 @@ body {
 }
 
 .detail__image-area{
+    position: relative;
     float: right;
     margin: 0 2vw;
+    width: 30vw;
+    height: 30vh;
+    background-color: #7E8BFF;
+    border: .1vw solid #7E8BFF;
+}
+
+.detail__image-area figcaption{
+    height: 10%;
+    font-weight: bold;
+    font-size: .8vw;
+    text-align: center;
+    color: white;
 }
 
 /* img, iframe 크기를 절대적으로 지정해줘서 웹 환경이 바뀌면 어색해짐. 어떻게하는지 모르겠음 ㅠ */
 .detail__image-area img{
-    width: 30vw;
-    height: 35vh;
+    width: 100%;
+    height: 90%;
 }
 
 .detail__image-area iframe{

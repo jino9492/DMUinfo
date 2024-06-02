@@ -37,6 +37,9 @@
                 </div>
                 <div class="detail__main-content">
                     <figure class="detail__image-area">
+                        <a href="#image-modal" class="detail__hover-text" target="_self">
+                            클릭하여 자세히 보기
+                        </a>
                         <figcaption>이미지</figcaption>
                         <img src="../../assets/data1.jpg">
                     </figure>
@@ -66,7 +69,7 @@
                             <p>사장님이 맛있고 음식이 친절해요!</p>
                         </div>
                     </div>
-                    <form action="">
+                    <form action="" id="input-form">
                         <div class="detail__input-comment">
                             <textarea placeholder="여기에 댓글을 입력" ></textarea>
                             <div class="detail__submit-wrapper">
@@ -83,6 +86,26 @@
             </main>
         </div>
     </div>
+    <!--image modal section-->
+    <div id="image-modal" class="detail__image-modal">
+        <div class="detail__image-modal-dialog">
+            <div class="detail__image-modal-content">
+                <div class="detail__image-modal-header">백소정 동양미래대점 이미지</div>
+                <div class="detail__slider">
+                    <input type="radio" name="slider" checked>
+                    <input type="radio" name="slider">
+                    <!-- <input type="radio" name="slider">
+                    <input type="radio" name="slider">
+                    <input type="radio" name="slider"> -->
+                    <figure>
+                        <img src="../../assets/data1.jpg" alt="">
+                        <img src="../../assets/background.jpg" alt="">
+                    </figure>
+                </div>
+                <a href="#" class="detail__image-modal-closebtn">×</a>
+          </div>
+        </div>
+      </div>
     <!--footer section-->
     <footer>
         <div class="footer__lc">
@@ -100,13 +123,14 @@
                 <div class="footer__copyright">ⓒ 2024 동양미래대학교 컴퓨터소프트웨어공학 Team 6 All Right Reserved.</div>
             </div>
         </div>
+
         <div class="footer__st">
             <div class="footer__menu">
                 <h3 class="footer__shortcut">
                     메뉴 바로가기
                 </h3>
-                <a class="footer__bogie" href="../../pages/map-page.html">지도 보기</a>
-                <a class="footer__bogie" href="../../pages/collection-page.html">모아 보기</a>
+                <a class="footer__bogie" href="#">지도 보기</a>
+                <a class="footer__bogie" href="#">모아 보기</a>
             </div>
             <div class="footer__team">
                 <h3 class="footer__teamtitle">team 6</h3>

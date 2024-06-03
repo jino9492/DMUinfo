@@ -53,6 +53,11 @@ body{
     cursor: pointer;
     background-color: #4B4FFF;
 }
+.colored-button:active{
+    transition: .3s;
+    -webkit-transition: .3s;
+    background-color: #1b1efa;
+}
 
 @font-face {
     font-family: 'yg-jalnan';

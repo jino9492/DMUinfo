@@ -10,7 +10,9 @@ body {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 7vh;
+}
+.collection__container aside .collection__list-wrapper, .collection__container main{
+    padding-bottom: 5vh;
 }
 .collection__toggle-btn{
     display: flex;
@@ -62,16 +64,17 @@ input[type=checkbox].collection__toggle{
 input[type=checkbox].collection__toggle:checked ~ .collection__toggle-btn{
     left: 0;
 }
-input[type=checkbox].collection__toggle:checked ~ .collection__side-menu{
+input[type=checkbox].collection__toggle:checked ~ aside .collection__side-menu{
     display: none;
     position: relative;
     left: -12vw;
 }
-input[type=checkbox].collection__toggle:checked ~ .collection__content{
+input[type=checkbox].collection__toggle:checked ~ main .collection__content{
     flex: none;
     width: 80vw;
 }
 .collection__side-menu {
+    height: 100%;
     box-sizing: border-box;
     width: 12vw;
     background-color: #f0f0f0;
@@ -80,8 +83,8 @@ input[type=checkbox].collection__toggle:checked ~ .collection__content{
 .collection__side-menu p {
     font-size: 1.6vw;
     text-align: center;
-    margin: 5%;
-    margin-top: 15%;
+    padding: 5%;
+    padding-top: 15%;
     font-weight: bold;
 }
 
@@ -96,7 +99,7 @@ input[type=checkbox].collection__toggle:checked ~ .collection__content{
 }
 .collection__list-wrapper{
     position: sticky;
-    top:5vh;
+    top:10vh;
 }
 .collection__side-menu ul {
     margin: 10%;
@@ -206,6 +209,7 @@ input[type=checkbox].collection__toggle:checked ~ .collection__content{
 .collection__category-title p {
     font-size: 1vw;
     font-weight: 600;
+    margin-bottom: 2.5vh;
 }
 
 .collection__category {

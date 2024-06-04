@@ -123,6 +123,18 @@ textarea:focus{
     color: red;
 }
 
+.signup__input-wrapper > p{
+    color: green;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 1vh;
+    margin-bottom: 0;
+}
+
+.signup__input-wrapper > meter{
+    width: 100%;
+}
+
 .signup__gender-wrapper{
     margin-top: 1.5vh;
 }

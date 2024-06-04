@@ -31,9 +31,9 @@
                 <label class="signup__input-wrapper">아이디 <span>*</span><br>
                     <input type="text" placeholder="아이디 입력 (6~20자)" required/>
                 </label>
-                <label class="signup__input-wrapper">비밀번호 <span>*</span><br>
-                    <input type="password" placeholder="비밀번호 입력" required/>
-                    보안 수준<meter value="5" min="0" max="100" low="20" high="80"></meter>
+                <label class="signup__input-wrapper" id="password-wrapper">비밀번호 <span>*</span><br>
+                    <input type="password" oninput="setSecuLVPassword()" placeholder="비밀번호 입력" required/>
+                    <p>보안 수준</p><meter value="0" min="0" max="100" low="33" high="67" optimum="100"></meter>
                 </label>
                 <label class="signup__input-wrapper">비밀번호 확인 <span>*</span><br>
                     <input type="password" placeholder="비밀번호 재입력" required/>
@@ -63,5 +63,27 @@
             </form>
         </div>
     </section>
+    <script>
+        function setSecuLVPassword(){
+            let curValue = document.getElementById("password-wrapper").children[2].value;
+
+            let letters = curValue.split('');
+
+            let score = 0;
+            for(letter of letters){
+                if (/[\{\}\[\]\/?.,;:|\)*~`!^\-_+<>@\#$%&\\\=\(\'\"]/g.test(letter)){
+                    score += 30;
+                }
+                else if (/^[A-Z]+$/.test(letter)){
+                    score += 10;
+                }
+                else{
+                    score += 5;
+                }
+            }
+
+            document.getElementById("password-wrapper").children[4].value = score;
+        }
+    </script>
 </body>
 </html>

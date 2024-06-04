@@ -11,6 +11,9 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
+.collection__content-top {
+    margin-bottom: 5vh;
+}
 .collection__container aside .collection__list-wrapper, .collection__container main{
     padding-bottom: 5vh;
 }
@@ -20,7 +23,8 @@ body {
     align-items: center;
     width: 3vw;
     height: 3vw;
-    background-color: #ccc;
+    background-color: #f0f0f0;
+    border-radius: 0 .5vw .5vw 0;
     position: absolute;
     left: 12vw;
 }
@@ -31,7 +35,7 @@ body {
     width: 2vw;
 }
 .collection__toggle-btn .collection__toggle-line{
-    transition: all 0.collection__3s;
+    transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
     height: .8vh;
@@ -39,20 +43,20 @@ body {
     background-color: #fff;
 }
 .collection__toggle-btn .collection__toggle-line:nth-child(1) {
-    position: relative;
-    transition: transform 0.collection__3s;
+    transition: transform 0.3s;
     box-sizing: border-box;
+    position: relative;
     float: left;
 }
 .collection__toggle-btn .collection__toggle-line:nth-child(2) {
-    transition: transform 0.collection__3s;
+    transition: transform 0.3s;
     box-sizing: border-box;
     position: relative;
     float: left;
     margin-top: .5vh;
 }
 .collection__toggle-btn .collection__toggle-line:nth-child(3) {
-    transition: transform 0.collection__3s;
+    transition: transform 0.3s;
     box-sizing: border-box;
     position: relative;
     float: left;
@@ -204,7 +208,7 @@ input[type=checkbox].collection__toggle:checked ~ main .collection__content{
 }
 
 .collection__category-title h3 {
-    font-size: 1.collection__5vw;
+    font-size: 1.5vw;
 }
 .collection__category-title p {
     font-size: 1vw;
@@ -230,8 +234,8 @@ input[type=checkbox].collection__toggle:checked ~ main .collection__content{
 }
 
 .collection__card {
-    width: 21.5%;
-    height: 60vh;
+    width: 22.5%;
+    height: 65vh;
     background-color: white;
     border-radius: 2vw;
     box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.1);
@@ -262,13 +266,15 @@ input[type=checkbox].collection__toggle:checked ~ main .collection__content{
 .collection__card p.collection__name{
     display: block;
     color: black;
-    font-size: 1.collection__2vw;
+    font-size: 1.2vw;
     font-weight: bold;
     padding: 1vh 1vw;
 }
 
 .collection__card div{
     text-align: justify;
+    border-top: .1vw solid rgba(0, 0, 0, 0.1);
+    margin-top: 2vh;
     padding: 1vw;
     font-size: .85vw;
     line-height: 1.8em;

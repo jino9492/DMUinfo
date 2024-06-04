@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/thread.css">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <div class="content-wrapper">
+
+        <!--header section-->
+        <header class="header__wrapper">
+            <div class="header__left-wrapper">
+                <div class="header__logo"><a href="../pages/main-page.html">DMUinfo</a></div>
+                <nav class="header__nav-bar">
+                    <a class="header__btn" href="./map-page.html">지도 보기</a>
+                    <a class="header__btn" href="./collection-page.html">모아 보기</a>
+                    <a class="header__btn" href="./thread-page.html">게시판 보기</a>
+                </nav>
+            </div>
+            <div class="header__sign-section">
+                <a class="header__btn " href="./signin-page.html">로그인</a>
+                <a class="header__btn colored-button" href="./signup-page1.html">회원 가입</a>
+            </div>
+        </header>
+        <!--main section-->
+        <main>
+            <div class="board__box">
+                <h1>통합 게시판</h1>
+                <p class="subtitle">모든 게시판의 내용물을 모아놓은 공간입니다.</p>
+
+                <div class="input__box">
+                    <select class="select__box">
+                        <option value="title" selected hidden disabled>제목</option>
+                        <option value="writer">글쓴이</option>
+                        <option value="title+content">제목+내용</option>
+                        <option value="content">내용</option>
+                    </select>
+                    <img class="search-img" src="../assets/search img.png" alt=""><input type="search" class="search__box">
+                </div>
+                <hr>
+
+                <section>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width: 2.5vw;">
+                            <col style="width: 2.5vw;">
+                            <col style="width: 40vw;">
+                            <col style="width: 10vw;">
+                            <col style="width: 4vw;">
+                            <col style="width: 4vw;">
+                            </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>유형</th>
+                                <th class="table__thead-title">제목</th>
+                                <th>글쓴이</th>
+                                <th>날짜</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <label>
+                                <tr  class="fixation">
+                                    <td>▷</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="이용약관.html" target="_blank">이용약관 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr  class="fixation">
+                                    <td>▷</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="개인정보.html" target="_blank">개인정보처리방침 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr  class="fixation">
+                                    <td>▷</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="운영정책.html" target="_blank">운영정책 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr class="fixation">
+                                    <td>▷</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="공지사항.html" target="_blank">공지사항</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>7</td>
+                                    <td class="filter__freedom">자유</td>
+                                    <td class="table__thead-title"><a href="자유게시판.html" target="_blank">~~~~~~</a></td>
+                                    <td>사용자3</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>6</td>
+                                    <td class="filter__freedom">자유</td>
+                                    <td class="table__thead-title"><a href="자유게시판.html" target="_blank">사이트 망한거 같으면 개추ㅋㅋ</a></td>
+                                    <td>사용자2</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>5</td>
+                                    <td class="filter__debate">토론</td>
+                                    <td class="table__thead-title"><a href="자유게시판.html" target="_blank">○○○ 고척점 내용 설명에 대하여</a></td>
+                                    <td>사용자1</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>4</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="자유게시판.html" target="_blank">이용약관 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>3</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="운영정책.html" target="_blank">운영정책 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="개인정보.html" target="_blank">개인정보처리방침 관련 안내</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                            <label>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="filter__announcement">공지</td>
+                                    <td class="table__thead-title"><a href="공지사항.html" target="_blank">공지사항</a></td>
+                                    <td>관리자</td>
+                                    <td>2024.05.14</td>
+                                    <td>1,004</td>
+                                </tr>
+                            </label>
+                        </tbody>
+                    </table>
+                </section>
+                <div class="filter">
+                    <span>필터 · <a href="filter__announcement.html" class="filter__announcement">공지</a> | 
+                                <a href="filter__debate.html" class="filter__debate">토론</a> | 
+                                <a href="filter__freedom.html" class="filter__freedom">자유</a>
+                    </span>
+                    <span class="writing"><a href="게시글 작성.html" target="_blank">🖉 글쓰기</a></span>
+                </div>
+                <div class="page">
+                    <input type="button" class="page__button" value="&lt;">
+                    <div class="page__first-page"><a href="notice board.html">1</a></div>
+                    <input type="button" class="page__button" value="&gt;">
+                </div>
+            </div>
+       </main>
+    </div>
+   <!--footer section-->
+   <footer>
+    <div class="footer__lc">
+        <div class="footer__flogo">
+            <a href="#">DMUinfo</a>
+        </div>
+        <div class="footer__contents-wrapper">
+            <div class="footer__nav-bar">
+                <a class="footer__nav-link" href="#">이용약관</a>
+                <a class="footer__nav-link" href="#">개인정보처리방침</a>
+                <a class="footer__nav-link" href="#">운영정책</a>
+                <a class="footer__nav-link" href="#">공지사항</a>
+                <a class="footer__nav-link" href="#">Contact Us</a>
+            </div>
+            <div class="footer__copyright">ⓒ 2024 동양미래대학교 컴퓨터소프트웨어공학 Team 6 All Right Reserved.</div>
+        </div>
+    </div>
+
+    <div class="footer__st">
+        <div class="footer__menu">
+            <h3 class="footer__shortcut">
+                메뉴 바로가기
+            </h3>
+            <a class="footer__bogie" href="#">지도 보기</a>
+            <a class="footer__bogie" href="#">모아 보기</a>
+        </div>
+        <div class="footer__team">
+            <h3 class="footer__teamtitle">team 6</h3>
+            <div class="footer__name">
+                <p>정진오 sample123@gmail.com</p>
+                <p>박근우 sample123@gmail.com</p>
+                <p>박성환 sample123@gmail.com</p>
+                <p>서지연 sample123@gmail.com</p>
+                <p>이재민 sample123@gmail.com</p>
+                <p>이나연 sample123@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

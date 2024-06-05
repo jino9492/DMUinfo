@@ -6,7 +6,7 @@
 .main__title-image{
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 20vh;
 
     background-image: url("../assets/background.jpg");
     background-repeat: no-repeat;
@@ -15,6 +15,42 @@
     width: 100vw; height: 93vh;
     position: relative;
     background-color: azure;
+}
+.main__title-image > img{
+    width: 4vw;
+    position: absolute;
+    top: 80%;
+    filter: invert(100%);
+}
+.main__title-image > p{
+    position: absolute;
+    color: white;
+    font-size: .8vw;
+    text-align: center;
+    top: 92%;
+    font-weight: 700;
+}
+.main__title-image > img{
+    animation: swing 2s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swing{
+    from{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-4px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(4px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
 .main__title{
     width: 60vw;

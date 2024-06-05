@@ -149,16 +149,22 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+    height: 130vh;
     padding: 10vh 0;
     background-color: white;
     position: relative;
 }
 .section2__more{
+    opacity: 0;
     display: flex;
     justify-content: space-evenly;
-    width: 75%; height: 65vh;
+    width: 85%; height: 65vh;
     margin: 0 auto;
     margin-top: 5vh;
+}
+.section2__more.on{
+    opacity: 1;
+    animation: fadein-vertical1 1s;
 }
 .section2__popular{
     color: black;
@@ -179,6 +185,7 @@
     text-align: center;
     width: 12vw;
     margin: 0 auto;
+    padding: 5vh 0;
     font-size: 1vw;
     text-decoration: none;
 }

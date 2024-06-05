@@ -110,7 +110,7 @@ body {
     margin-top: 10vh;
 }
 .detail__map-frame-title{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     font-weight: bold;
     margin-bottom: 2vh;
 }
@@ -122,20 +122,20 @@ body {
     margin-top: 20vh;
 }
 .detail__comments-wrapper > h3{
-    font-size: 1.8vw;
+    font-size: 1.3vw;
 }
 .detail__user{
-    font-size: 1.1vw;
+    font-size: .8vw;
 }
 
 .detail__user-eva{
-    font-size: 1.2vw;
+    font-size: .8vw;
     color: orange;
     margin-left: 1vw;
 }
 
 .detail__comment{
-    font-size: 1vw;
+    font-size: .8vw;
     height: 7.5vh;
     text-indent: 1vw;
     margin-top: 1vh;

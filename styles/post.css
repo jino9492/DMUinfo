@@ -1,0 +1,121 @@
+body{
+    background-color: #F0F0F0;
+}
+.post__all{
+    background-color: white;   
+    margin: 0 auto;
+    width: 60vw; min-height: 100vh;
+    padding: 2.5vw;
+    
+}
+.post__main-title{
+    text-indent: 1.5vw;
+    font-size: 1.5vw;
+}
+.post__sub-title{
+    width: 5vw; height: 2vh;
+    text-align: center;
+    color: #666666;
+    float: left;
+    font-size: 0.62vw;
+}
+.post__input-wrapper{
+    display: flex;
+    line-height: 1em;
+    margin: 10vh 0;
+    flex-wrap: wrap;
+}
+textarea{
+    resize: none;
+}
+input::placeholder, textarea::placeholder{
+    font-size: .8vw;
+}
+.input__title{
+    width: 20vw; height: 3vh;
+    padding: 0.3vw;
+    border: solid #B0B0B0 .1vw;
+    border-radius: 0.2vw;
+}
+.input__detail{
+    width: 40vw; height: 40vh;
+    padding: 0.3vw;
+    border: solid #B0B0B0 .1vw;
+    border-radius: 0.2vw;
+}
+.input__title, .input__detail{
+    border-radius: .5vw;
+}
+.input__choice{
+    font-size: 0.62vw;
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+[type="radio"]{
+    appearance: none;
+    width: 1vw; height: 1vw;
+    margin-right: .5vw;
+    margin-left: .5vw;
+    margin-top: 0;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
+[type="radio"]:checked{
+    box-shadow: 0 0 0 .1vw #666666;
+    border: 0.1vw solid #D9D9D9;
+    background-color: #666666;
+}
+[type="checkbox"]{
+    appearance: none;
+    width: 1vw; height: 1vw;
+    border-radius: 10%;
+    margin-right: .5vw;
+    margin-left: .5vw;
+    margin-top: 0;
+    background-color: #D9D9D9;
+}
+[type="checkbox"]:checked{
+    box-shadow: 0 0 0 .1vw #666666;
+    border: 0.1vw solid #D9D9D9;
+    background-color: #666666;
+}
+[type="number"]:focus{
+    outline: none;
+}
+#draw~.input__canvas-wrapper canvas{
+    border: .1vw #D9D9D9 solid;
+    margin-top:2vh;
+}
+#draw~.input__canvas-wrapper{
+    width: 100%;
+    padding: 0 3%;
+    margin-top:2vh;
+    display: none;
+}
+#draw:checked~.input__canvas-wrapper{
+    display: block;
+}
+.input__canvas-tool-wrapper{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+.input__btn-upload {
+    background: #D9D9D9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6vw;
+}
+.post__submit-wrapper{
+    display: flex;
+    justify-content: right;
+}
+.post__button{
+    margin-right: 1vw;
+}
+.post__button button{
+    margin-right: 1vw;
+}

@@ -59,6 +59,30 @@ body{
     background-color: #1b1efa;
 }
 
+.uncolored-button{
+    display: inline-block;
+    color: #979797 ;
+    border: .1vw solid #eee;
+    background-color: white ;
+    padding: 1.2vh .6vw ;
+    border-radius: .6vw ;
+    font-size: .8vw ;
+    text-decoration: none;
+}
+.uncolored-button:hover{
+    transition: .3s;
+    -webkit-transition: .3s;
+    cursor: pointer;
+    color: white;
+    background-color: #979797;
+}
+.uncolored-button:active{
+    transition: .3s;
+    -webkit-transition: .3s;
+    color: white;
+    background-color: #979797;
+}
+
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');

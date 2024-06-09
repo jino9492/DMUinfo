@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet" href="../styles//default.css">
+</head>
+<body>
+    <form class="post__all">
+        <h1 class="post__main-title">게시물작성</h1>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">제목<span style="color:red"> *</span></div>
+            <input type="text" placeholder="제목 입력" class="input__title" required>
+        </div>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">내용<span style="color:red"> *</span></div>
+            <textarea placeholder="내용 입력" class="input__detail" required></textarea>
+        </div>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">유형 설정<span style="color:red"> *</span></div>
+            <input type="radio" name="radio" required>
+            <span class="input__choice">자유</span>
+            <input type="radio" name="radio" required>
+            <span class="input__choice">토론</span>
+        </div>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">댓글 허용</div>
+            <input type="checkbox" class="input__checkbox">
+            <span class="input__choice">허용</span>
+        </div>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">업로드 파일</div>
+            <label for="file">
+                <input type="file" class="input__btn-upload" name="file" id="file" multiple>
+            </label>
+        </div>
+
+        <div class="post__input-wrapper">
+            <div class="post__sub-title">그림 그리기</div>
+            <input type="checkbox" class="input__checkbox" id="draw">
+            <span class="input__choice">허용</span>
+            <div class="input__canvas-wrapper">
+                <div class="input__canvas-tool-wrapper">
+                    <span>브러쉬 크기 <input id="number" type="number" min="0" max="100" value="1"></span>
+                    <span>브러쉬 색깔 <input id="color" type="color" min="0" max="100" value="1"></span>
+                    <button type="button" onclick="colorChange(color.value)">연필</button>
+                    <button type="button" onclick="colorChange('white')">지우개</button>
+                    <button type="button" onclick="clearAll()">전체지우기</button>
+                </div>
+                <canvas id="canvas" width="600" height="400"></canvas>
+            </div>
+        </div>
+
+        <div class="post__submit-wrapper">
+            <div class="post__button">
+                <button type="reset" class="uncolored-button">취소</button>
+                <button type="submit" class="colored-button">작성하기</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        var pos = {
+            drawable : false,
+            x : -1,
+            y : -1,
+        };
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var rect = canvas.getBoundingClientRect();  // 터치 스크린
+
+    // 전체 지우기
+        function clearAll(){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+    // 스타일 추가
+        number.oninput = function(){
+            ctx.lineWidth = number.value;
+        }
+        color.oninput = function(){
+            colorChange(color.value);
+        }
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        function colorChange(color){
+            ctx.strokeStyle = color;
+        }
+
+        canvas.addEventListener("mousedown", listener);
+        canvas.addEventListener("mousemove", listener);
+        canvas.addEventListener("mouseup", listener);
+        canvas.addEventListener("mouseout", listener);
+
+        /// 터치 스크린
+        canvas.addEventListener("touchstart", listener);
+        canvas.addEventListener("touchmove", listener);
+        canvas.addEventListener("touchend", listener);
+
+        function listener(e){
+            switch(e.type){
+                case "mousedown":
+                    drawStart(e);
+                    break;
+                case "mousemove":
+                    if(pos.drawable){
+                        draw(e);
+                    }
+                    break;
+                case "mouseout":
+                case "mouseup":
+                    drawEnd();
+                    break;
+                case "touchstart":
+                    touchStart(e);
+                    break;
+                case "touchmove":
+                    if(pos.drawable)
+                        touch(e);
+                    break;
+                case "touchend":
+                    drawEnd();
+                    break;
+                default:
+            }
+        }
+
+        function drawStart(e){
+            pos.drawable = true;
+            ctx.beginPath();
+            pos.x = e.offsetX;
+            console.log(pos.x);
+            pos.y = e.offsetY;
+            ctx.moveTo(pos.x, pos.y);
+        }
+        function touchStart(e){
+            pos.drawable = true;
+            ctx.beginPath();
+            pos.x = e.touches[0].pageX - rect.left
+            pos.y = e.touches[0].pageY - rect.top
+            ctx.moveTo(pos.x, pos.y);
+        }
+        function draw(e){
+            ctx.lineTo(e.offsetX, e.offsetY);
+            pos.x = e.offsetX;
+            pos.y = e.offsetY;
+            ctx.stroke();
+        }
+        function touch(e){
+            ctx.lineTo(e.touches[0].pageX - rect.left, e.touches[0].pageY - rect.top);
+            pos.x = e.touches[0].pageX - rect.left;
+            pos.y = e.touches[0].pageY - rect.top;
+            ctx.stroke();
+        }
+        function drawEnd(){
+            pos.drawable = false;
+            pos.x = -1;
+            pos.y = -1;
+        }
+    </script>
+</body>
+</html>

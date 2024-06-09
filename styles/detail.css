@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-
 body {
     background-color: #EEE;
-    font-family: "Arial", sans-serif;
-    line-height: 1.6;
 }
 
+.detail__hr{
+    border-width: 0.01vw;
+}
 .detail__content {
     overflow: auto;
     width: 70vw;
@@ -63,20 +57,26 @@ body {
     top: 0;
     padding: auto;
     margin: 0;
+    font-size: 1vw;
 }
 .detail__hover-text:hover{
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 0, 0, .3);
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
 }
 
 .detail__image-area{
     position: relative;
-    float: right;
-    margin: 0 2vw;
-    width: 30vw;
-    height: 30vh;
+    float: top;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+    width: 40vw;
+    height: 40vh;
     background-color: #7E8BFF;
     border: .1vw solid #7E8BFF;
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
 }
 
 .detail__image-area figcaption{
@@ -100,10 +100,28 @@ body {
     background-color: #666;
 
 }
+.detail__info-area img{
+    float: left;
+    text-indent: 1vw;
+    width: 1vw;
+}
+.detail__info-area{
+    padding: 1vw;
+    border: solid 0.1vw lightgray;
+    border-radius: 1vw;
+    margin-top: 1vw;
+}
+.detail__info-area p{
+    margin-bottom: 0.04vw;
+    font-size: 0.8vw;
+}
 .detail__text-area p{
     text-align: justify;
     text-indent: 1vw;
     font-size: 1vw;
+    border: solid 0.1vw lightgray;
+    padding: 1vw;
+    border-radius: 1vw;
 }
 .detail__map-frame-wrapper{
     clear: both;
@@ -124,11 +142,21 @@ body {
 .detail__comments-wrapper > h3{
     font-size: 1.3vw;
 }
+.detail__user-wrapper{
+    display: flex;
+    align-items: center;
+}
 .detail__user{
+    display: inline-block;
     font-size: .8vw;
 }
-
+.detail__user-profile{
+    display: inline-block;
+    margin-right: 1vw;
+    width: 2vw;
+}
 .detail__user-eva{
+    display: inline-block;
     font-size: .8vw;
     color: orange;
     margin-left: 1vw;
@@ -137,8 +165,27 @@ body {
 .detail__comment{
     font-size: .8vw;
     height: 7.5vh;
-    text-indent: 1vw;
     margin-top: 1vh;
+    margin-left: 2.8vw;
+}
+
+.detail__comment p{
+    width: 50vw;
+}
+
+.detail__no-comment-alert{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 7.5vw;
+}
+.detail__no-comment-alert img{
+    width: 2vw;
+    filter:invert(50%);
+}
+.detail__no-comment-alert p{
+    color:#777;
 }
 
 .detail__comments-wrapper textarea{
@@ -232,6 +279,7 @@ body {
     background-color: #000;
     font-weight: bold;
 }
+
 .detail__slider input[type=radio]{
     appearance: none;
     background-color: #fff;

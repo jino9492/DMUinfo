@@ -10,7 +10,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     padding: 7vw;
-    height: auto;
+    min-height: 100vh;
 }
 h1 {
     font-size: 2vw;
@@ -99,20 +99,20 @@ tbody tr {
 }
 .filter__announcement {
     color: #ff0000;
-    text-decoration: none;
 }
 .filter__freedom {
     color: #54A800;
-    text-decoration: none;
 }
 .filter__debate {
     color: #538DFF;
-    text-decoration: none;
 }
 .filter {
     padding-top: 0.8vw;
     font-size: 0.8vw;
     font-weight: 600;
+}
+.filter span a:hover{
+    text-decoration: none;
 }
 .writing > a {
     float: right;

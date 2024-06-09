@@ -1,0 +1,62 @@
+.page__content-section{
+    background-color: #ffffff;
+    margin: 0 auto;
+    width: 40vw;
+    height: 100vh;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.page__head{
+    margin-top: 0.84vh;
+    font-size: 1.5vw;
+}
+.page__sup{
+    font-size: 0.5vw;
+}
+.page__type1{
+    color: red;
+}
+.page__type2{
+    color: green;
+}
+.page__type3{
+    color: cornflowerblue;
+}
+.page__a{
+    text-decoration: none;
+    color: #7E8BFF;
+    padding: 0;
+    margin: 0;
+    font-size: 0.5vw;
+    background-color: #ffffff;
+    cursor: pointer;
+    display: block;
+    width: 6vw;
+}
+.page__title{
+    height: 2.5vh;
+}
+.page__writer{
+    font-size: 0.5vw;
+    margin-top: 1vh;
+}
+.page__body-text{
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    font-size: 1vw;
+}
+.page__file{
+    width: 30vw;
+    height: 70vh;
+    border: none;
+}
+.page__hr{
+    border-width: 0.1vw;
+    margin: 0;
+    padding: 0;
+}
+
+.page__pre{
+    font-size: 1vw;
+}

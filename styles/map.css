@@ -38,18 +38,18 @@
     border-radius: 500px;
     background-color: red;
 
-    animation: fadein-vertical 1s;
+    animation: fadein-vertical3 1s;
 }
 
-@keyframes fadein-vertical{
+@keyframes fadein-vertical3{
     from {
-        -webkit-transform: translateY(-3vh);
-        transform: translateY(-3vh);
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
         opacity: 0;
     }
-    20%{
-        -webkit-transform: translateY(-3vh);
-        transform: translateY(-3vh);
+    70%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
         opacity: 0;
     }
     to {

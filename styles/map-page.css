@@ -20,7 +20,9 @@ main{
     margin: .5%;
     border: .1vw solid #DDD;
 }
-
+.map__data-wrapper{
+    animation: fadein-vertical1 1s;
+}
 .map__map-image, .map__data-wrapper{
     border-radius: 1vw;
     width: 65vw;
@@ -38,10 +40,10 @@ main{
     border-radius: 1vw;
     box-shadow: 0 0 .5vw rgba(0, 0, 0, 0.1);
 
-    animation: fadein-vertical 1s;
+    animation: fadein-vertical1 1s;
 }
 
-@keyframes fadein-vertical{
+@keyframes fadein-vertical1{
     from {
         -webkit-transform: translateY(-3vh);
         transform: translateY(-3vh);

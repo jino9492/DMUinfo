@@ -109,11 +109,10 @@ body {
     padding: 1vw;
     border: solid 0.1vw lightgray;
     border-radius: 1vw;
-    margin-top: 1vw;
 }
 .detail__info-area p{
-    margin-bottom: 0.04vw;
     font-size: 0.8vw;
+    margin: 0;
 }
 .detail__text-area p{
     text-align: justify;

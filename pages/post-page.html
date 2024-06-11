@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../assets/icon.png"/>
+    <link rel="apple-touch-icon" href="../assets/icon.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/post.css">
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/header.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <!--header section-->
+        <header class="header__wrapper">
+            <div class="header__left-wrapper">
+                <div class="header__logo"><a href="../pages/main-page.html">DMUinfo</a></div>
+                <nav class="header__nav-bar">
+                    <ul>
+                        <li><a class="header__btn" href="./map-page.html">지도 보기</a></li>
+                        <li><a class="header__btn" href="./collection-page.html">모아 보기</a></li>
+                        <li><a class="header__btn" href="./thread-page.html">게시판 보기</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="header__nav-bar">
+                <ul class="header__sign-section">
+                    <a class="header__btn " href="./signin-page.html">로그인</a>
+                    <a class="header__btn colored-button" href="./signup-page1.html">회원 가입</a>
+                </ul>
+            </nav>
+        </header>
+        <!--map section-->
+        <form class="post__all">
+            <h1 class="post__main-title">게시물작성</h1>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">제목<span style="color:red"> *</span></div>
+                <input type="text" placeholder="제목 입력" class="input__title" required>
+            </div>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">내용<span style="color:red"> *</span></div>
+                <textarea placeholder="내용 입력" class="input__detail" required></textarea>
+            </div>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">유형 설정<span style="color:red"> *</span></div>
+                <input type="radio" name="radio" required>
+                <span class="input__choice">자유</span>
+                <input type="radio" name="radio" required>
+                <span class="input__choice">토론</span>
+            </div>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">댓글 허용</div>
+                <input type="checkbox" class="input__checkbox">
+                <span class="input__choice">허용</span>
+            </div>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">업로드 파일</div>
+                <label for="file">
+                    <input type="file" class="input__btn-upload" name="file" id="file" multiple>
+                </label>
+            </div>
+            <div class="post__input-wrapper">
+                <div class="post__sub-title">그림 그리기</div>
+                <input type="checkbox" class="input__checkbox" id="draw">
+                <span class="input__choice">허용</span>
+                <div class="input__canvas-wrapper">
+                    <div class="input__canvas-tool-wrapper">
+                        <label>브러쉬 크기 <input id="number" list="brush-size" type="number" min="0" max="100" value="1"></label>
+                        <label>브러쉬 색깔 <input id="color" type="color" min="0" max="100" value="1"></label>
+                        <button type="button" onclick="colorChange(color.value)">연필</button>
+                        <button type="button" onclick="colorChange('white')">지우개</button>
+                        <button type="button" onclick="clearAll()">전체지우기</button>
+                    </div>
+                    <canvas id="canvas" width="600" height="400"></canvas>
+                </div>
+            </div>
+            <div class="post__submit-wrapper">
+                <div class="post__button">
+                    <button type="reset" class="uncolored-button">취소</button>
+                    <button type="submit" class="colored-button">작성하기</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--footer section-->
+    <footer>
+        <div class="footer__lc">
+            <div class="footer__flogo">
+                <a href="../pages/map-page.html">DMUinfo</a>
+            </div>
+            <div class="footer__contents-wrapper">
+                <ul class="footer__nav-bar">
+                    <li><a class="footer__nav-link" href="../components/data/thread4-detail.html">이용약관</a></li>
+                    <li><a class="footer__nav-link" href="../components/data/thread2-detail.html">개인정보처리방침</a></li>
+                    <li><a class="footer__nav-link" href="../components/data/thread3-detail.html">운영정책</a></li>
+                    <li><a class="footer__nav-link" href="../components/data/thread1-detail.html">공지사항</a></li>
+                    <li><a class="footer__nav-link" href="#">Contact Us</a></li>
+                </ul>
+                <div class="footer__copyright">ⓒ 2024 동양미래대학교 컴퓨터소프트웨어공학 Team 6 All Right Reserved.</div>
+            </div>
+        </div>
+
+        <div class="footer__st">
+            <div class="footer__menu">
+                <h3 class="footer__shortcut">
+                    메뉴 바로가기
+                </h3>
+                <a class="footer__bogie" href="../pages/main-page.html">지도 보기</a>
+                <a class="footer__bogie" href="../pages/collection-page.html">모아 보기</a>
+                <a class="footer__bogie" href="../pages/thread-page.html">게시판 보기</a>
+            </div>
+            <div class="footer__team">
+                <h3 class="footer__teamtitle">team 6</h3>
+                <div class="footer__name">
+                    <p>정진오 sample123@gmail.com</p>
+                    <p>박근우 sample123@gmail.com</p>
+                    <p>박성환 sample123@gmail.com</p>
+                    <p>서지연 sample123@gmail.com</p>
+                    <p>이재민 sample123@gmail.com</p>
+                    <p>이나연 sample123@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var pos = {
+            drawable : false,
+            x : -1,
+            y : -1,
+        };
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var rect = canvas.getBoundingClientRect();  // 터치 스크린
+
+    // 전체 지우기
+        function clearAll(){
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+    // 스타일 추가
+        number.oninput = function(){
+            if(number.value >= 100){
+                number.value = 100;
+            }
+            else if (number.value < 0){
+                number.value = 1
+            }
+            ctx.lineWidth = number.value;
+        }
+        color.oninput = function(){
+            colorChange(color.value);
+        }
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+
+        function colorChange(color){
+            ctx.strokeStyle = color;
+        }
+
+        canvas.addEventListener("mousedown", listener);
+        canvas.addEventListener("mousemove", listener);
+        canvas.addEventListener("mouseup", listener);
+        canvas.addEventListener("mouseout", listener);
+
+        /// 터치 스크린
+        canvas.addEventListener("touchstart", listener);
+        canvas.addEventListener("touchmove", listener);
+        canvas.addEventListener("touchend", listener);
+
+        function listener(e){
+            switch(e.type){
+                case "mousedown":
+                    drawStart(e);
+                    break;
+                case "mousemove":
+                    if(pos.drawable){
+                        draw(e);
+                    }
+                    break;
+                case "mouseout":
+                case "mouseup":
+                    drawEnd();
+                    break;
+                case "touchstart":
+                    touchStart(e);
+                    break;
+                case "touchmove":
+                    if(pos.drawable)
+                        touch(e);
+                    break;
+                case "touchend":
+                    drawEnd();
+                    break;
+                default:
+            }
+        }
+
+        function drawStart(e){
+            pos.drawable = true;
+            ctx.beginPath();
+            pos.x = e.offsetX;
+            console.log(pos.x);
+            pos.y = e.offsetY;
+            ctx.moveTo(pos.x, pos.y);
+        }
+        function touchStart(e){
+            pos.drawable = true;
+            ctx.beginPath();
+            pos.x = e.touches[0].pageX - rect.left
+            pos.y = e.touches[0].pageY - rect.top
+            ctx.moveTo(pos.x, pos.y);
+        }
+        function draw(e){
+            ctx.lineTo(e.offsetX, e.offsetY);
+            pos.x = e.offsetX;
+            pos.y = e.offsetY;
+            ctx.stroke();
+        }
+        function touch(e){
+            ctx.lineTo(e.touches[0].pageX - rect.left, e.touches[0].pageY - rect.top);
+            pos.x = e.touches[0].pageX - rect.left;
+            pos.y = e.touches[0].pageY - rect.top;
+            ctx.stroke();
+        }
+        function drawEnd(){
+            pos.drawable = false;
+            pos.x = -1;
+            pos.y = -1;
+        }
+    </script>
+</body>
+</html>

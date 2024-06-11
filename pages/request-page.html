@@ -52,10 +52,25 @@
             </div>
             <div class="request__input-wrapper">
                 <div class="request__sub-title">업로드 파일<span style="color:red"> *</span></div>
-                <label for="file">
+                <label>
                     <input type="file" class="input__btn-upload" name="file" id="file" multiple required>
                 </label>
                 <div class="request__sub-title" style="line-height: 2em;">최대 5장</div>
+            </div>
+            <div class="request__input-wrapper">
+                <div class="request__sub-title">상세정보 입력</div>
+                <label class="request__info-wrapper">
+                    <input type="text" placeholder="주소">
+                    <input type="text" placeholder="전화번호">
+                    <input type="text" placeholder="영업시간">
+                    <input type="url" placeholder="SNS (URL)">
+                </label>
+            </div>
+            <div class="request__submit-wrapper">
+                <div class="request__button">
+                    <button type="reset" class="uncolored-button">취소</button>
+                    <button type="submit" class="colored-button">작성하기</button>
+                </div>
             </div>
         </form>
     </div>

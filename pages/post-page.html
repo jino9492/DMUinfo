@@ -45,15 +45,21 @@
             </div>
             <div class="post__input-wrapper">
                 <div class="post__sub-title">유형 설정<span style="color:red"> *</span></div>
-                <input type="radio" name="radio" required>
-                <span class="input__choice">자유</span>
-                <input type="radio" name="radio" required>
-                <span class="input__choice">토론</span>
+                <label class="input__choice">
+                    <input type="radio" name="radio" required>
+                    <span class="input__choice">자유</span>
+                </label>
+                <label class="input__choice">
+                    <input type="radio" name="radio" required>
+                    <span class="input__choice">토론</span>
+                </label>
             </div>
             <div class="post__input-wrapper">
                 <div class="post__sub-title">댓글 허용</div>
-                <input type="checkbox" class="input__checkbox">
-                <span class="input__choice">허용</span>
+                <label class="input__choice">
+                    <input type="checkbox" class="input__checkbox">
+                    <span class="input__choice">허용</span>
+                </label>
             </div>
             <div class="post__input-wrapper">
                 <div class="post__sub-title">업로드 파일</div>
@@ -64,7 +70,7 @@
             <div class="post__input-wrapper">
                 <div class="post__sub-title">그림 그리기</div>
                 <input type="checkbox" class="input__checkbox" id="draw">
-                <span class="input__choice">허용</span>
+                <span class="input__choice" style="display: inline-block; position:relative; top: -.28vh; left:-.5vw;">허용</span>
                 <div class="input__canvas-wrapper">
                     <div class="input__canvas-tool-wrapper">
                         <label>브러쉬 크기 <input id="range" type="range" min="0" max="100" value="1"></label>

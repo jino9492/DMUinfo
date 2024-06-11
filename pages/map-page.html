@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/map.css">
     <link rel="stylesheet" href="../styles/header.css" >
     <link rel="stylesheet" href="../styles/footer.css">
-    <title>Document</title>
+    <title>DMUinfo</title>
 </head>
 <body>
     <div class="content-wrapper">
@@ -39,6 +39,7 @@
             <section class="map__map-section">
                 <!--map data anchor-->
                 <div class="map__data-wrapper" onclick="getCoords(event)">
+                    <a class="map__request"href="./request-page.html"><img src="../assets/question-mark-circle.png">여기를 눌러 정보 추가하기 ▶<div class="map__request-explanation">이곳에서 맵에 표시되는 정보들을 작성할 수 있습니다. 모든 작성물들은 관리자의 승인을 통해 업로드됩니다.</div></a>
                     <div class="map__cur-coords">( 0 , 0 )</div>
                     <!--data1-->
                     <a href="../components/data/data1.html" class="map__marker" id="map__marker1" target="map__detail-info-iframe">

@@ -11,7 +11,7 @@
     font-size: .8vw;
     background-color: white;
     user-select: none;
-    border-bottom: 1px solid #F0F0F0;
+    border-bottom: .1vw solid #F0F0F0;
 }
 
 .header__left-wrapper{

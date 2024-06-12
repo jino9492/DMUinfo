@@ -61,11 +61,11 @@ footer{
     color: white;
 }
 .footer__st{
-    padding: 5px 5vw 5px 5px;
+    padding: .5vw 5vw .5vw .5vw;
     column-width: 15vw;
     column-gap: 5vw;
     column-rule-style: solid;
-    column-rule-width: 1px;
+    column-rule-width: .1vw;
     column-count: 2;
 }
 .footer__shortcut{

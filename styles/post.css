@@ -52,6 +52,7 @@ input[type="text"], input[type="url"]{
     display: flex;
     align-items: center;
     font-size: 0.62vw;
+    margin-bottom: 1vh;
 }
 input:focus, textarea:focus{
     outline: none;

@@ -38,6 +38,9 @@ input[type="text"], input[type="url"]{
     border: solid #B0B0B0 .1vw;
     border-radius: 0.2vw;
 }
+input[type="text"]{
+    margin-bottom: 1vh;
+}
 .input__detail{
     width: 100%; height: 40vh;
     padding: 0.3vw;
@@ -88,6 +91,15 @@ input:focus, textarea:focus{
 }
 [type="number"]:focus{
     outline: none;
+}
+iframe{
+    width: 100%;
+    height: 60vh;
+    padding-top: 10vh;
+    transform: scale(1.5);
+}
+.request__iframe-wrapper{
+    overflow: hidden;
 }
 .request__info-wrapper input{
     margin-bottom: 1vh;
